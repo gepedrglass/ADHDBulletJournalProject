@@ -1,0 +1,15 @@
+Raymund Rama 200429840 Comp 3025 Assignment 1b Design Document
+
+Collections: I anticipate two collections to be used in my application. 
+Collection 1: TaskCreate
+var taskDate : Date? = null,
+var taskType : String? = null,
+var taskTitle : String? = null, 
+var taskNotes : String? = null,
+var taskImage : ImageFile(I don’t know the actual variable name)? = null
+
+Collection 2: UserAccount
+var name : String? = null,
+var email : String? = null, 
+var password : String? = null,
+var accountBackupdata : taskData(don’t know how this will be implemented)? = null
