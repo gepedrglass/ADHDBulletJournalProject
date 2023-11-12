@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ADHDBulletJournalProject</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_task">Create Task</string>
+    <string name="back">Back</string>
+    <string name="submit">Submit</string>
 </resources>

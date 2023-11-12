@@ -1,5 +1,6 @@
 package com.r200429840comp3025f23.adhdbulletjournalproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.r200429840comp3025f23.adhdbulletjournalproject.databinding.ActivityCreateTaskBinding
@@ -12,5 +13,9 @@ class CreateTask : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCreateTaskBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.createTaskCancelBtn.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 }
