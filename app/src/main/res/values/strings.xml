@@ -4,4 +4,8 @@
     <string name="create_task">Create Task</string>
     <string name="back">Back</string>
     <string name="submit">Submit</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="add_image">Add Image</string>
+    <string name="notes">Notes</string>
 </resources>

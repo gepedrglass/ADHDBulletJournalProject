@@ -10,23 +10,68 @@
         android:id="@+id/createTaskSubmitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="19dp"
+        android:layout_marginEnd="64dp"
         android:layout_marginBottom="60dp"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/createTaskCancelBtn" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/createTaskCancelBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="64dp"
         android:layout_marginBottom="60dp"
         android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/createTaskSubmitBtn"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/createTaskDateEditText"
+        android:layout_width="228dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="114dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createTaskTitleEditText"
+        android:layout_width="227dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/title"
+        app:layout_constraintEnd_toEndOf="@+id/createTaskDateEditText"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskDateEditText" />
+
+    <EditText
+        android:id="@+id/createTextNotesMultilineText"
+        android:layout_width="229dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="@string/notes"
+        app:layout_constraintStart_toStartOf="@+id/createTaskTitleEditText"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskTitleEditText" />
+
+    <Button
+        android:id="@+id/createTaskAddImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/add_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTextNotesMultilineText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
