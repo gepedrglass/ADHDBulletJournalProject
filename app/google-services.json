@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "219680256812",
+    "project_id": "adhdbulletjournalproject",
+    "storage_bucket": "adhdbulletjournalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219680256812:android:fac03d745db2e6b8d9f289",
+        "android_client_info": {
+          "package_name": "com.r200429840comp3025f23.adhdbulletjournalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnbpiyL4SidyPoKBX1FSNVHYZdIJbr2mY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
