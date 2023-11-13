@@ -18,5 +18,9 @@ class Settings : AppCompatActivity() {
         binding.settingsBackButton.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
+
+        binding.SettingsLogInButton.setOnClickListener {
+            startActivity(Intent(this, SigninActivity::class.java))
+        }
     }
 }
