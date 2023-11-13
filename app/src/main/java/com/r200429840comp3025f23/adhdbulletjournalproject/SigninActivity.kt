@@ -8,12 +8,9 @@ import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult
 import com.google.firebase.auth.FirebaseAuth
-import com.r200429840comp3025f23.adhdbulletjournalproject.databinding.ActivitySigninBinding
 
 class SigninActivity : AppCompatActivity() {
 
-    //binding initlialization
-    private lateinit var binding : ActivitySigninBinding
 
 
     // See: https://developer.android.com/training/basics/intents/result
@@ -25,10 +22,8 @@ class SigninActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        //binding
-        binding = ActivitySigninBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_signin)
 
         // Choose authentication providers
         val providers = arrayListOf(
