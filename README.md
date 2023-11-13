@@ -12,3 +12,7 @@ Some concepts I'll need to make this app happen are database access for storing 
 
 
 (For login protection, I'm thinking that should come second to the "low-effort" interface. By that I mean, users should be able to download and interact with the app immediately, while having the ability to password protect their account as an added option afterwards, instead of up-front demanding access. (It might draw people away))
+
+
+![image](https://github.com/gepedrglass/ADHDBulletJournalProject/assets/141185742/4f6c7ce4-aa0e-4b12-b5a2-e90158531693)
+Proof that the firebase database will at least upload data. (Still need to implement Reading by the program)
