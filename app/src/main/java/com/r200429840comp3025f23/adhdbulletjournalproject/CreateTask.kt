@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.r200429840comp3025f23.adhdbulletjournalproject.databinding.ActivityCreateTaskBinding
 import com.r200429840comp3025f23.adhdbulletjournalproject.databinding.ActivityMainBinding
 
@@ -24,9 +26,10 @@ class CreateTask : AppCompatActivity() {
 
         //submitting task data to cloud firestore database
         binding.createTaskSubmitBtn.setOnClickListener {
+            // Make sure to add ".text." between the EditText and the .toString() or else the data won't be saved properly.
             var taskTitle = binding.createTaskTitleEditText.text.toString()
-            var taskNotes = binding.createTextNotesMultilineText.toString()
-            var taskDate = binding.createTaskDateEditText.toString()
+            var taskNotes = binding.createTextNotesMultilineText.text.toString()
+            var taskDate = binding.createTaskDateEditText.text.toString()
 
 
             if (taskTitle.isNotEmpty() &&

@@ -6,37 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".CreateTask">
 
+    <!-- createTaskDateEditText and createTExtNotesMultilineText aren't being saved to the database properly.
+ I think this is because their "inputType" isn't text, like createTaskTitleEditText's is.
+
+ Edit, 9:38PM, this is wrong. The issue originates in the CreateTask activity, when converting the contents of
+    createTaskDateEditText and createTExtNotesMultilineText into text. -->
+
     <Button
         android:id="@+id/createTaskSubmitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="60dp"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskAddImageBtn"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/createTaskCancelBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="52dp"
         android:layout_marginBottom="60dp"
         android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/createTaskSubmitBtn"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskAddImageBtn"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/createTaskDateEditText"
         android:layout_width="228dp"
         android:layout_height="60dp"
-        android:layout_marginTop="114dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
-        android:inputType="date"
         android:hint="@string/date"
+        android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,34 +53,38 @@
         android:id="@+id/createTaskTitleEditText"
         android:layout_width="227dp"
         android:layout_height="62dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="@string/title"
-        app:layout_constraintEnd_toEndOf="@+id/createTaskDateEditText"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createTaskDateEditText" />
 
     <EditText
         android:id="@+id/createTextNotesMultilineText"
         android:layout_width="229dp"
         android:layout_height="98dp"
-        android:layout_marginTop="35dp"
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
         android:hint="@string/notes"
-        app:layout_constraintStart_toStartOf="@+id/createTaskTitleEditText"
-        app:layout_constraintTop_toBottomOf="@+id/createTaskTitleEditText" />
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/createTaskAddImageBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskTitleEditText"
+        app:layout_constraintVertical_bias="0.379" />
 
     <Button
         android:id="@+id/createTaskAddImageBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="144dp"
         android:text="@string/add_image"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createTextNotesMultilineText" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
