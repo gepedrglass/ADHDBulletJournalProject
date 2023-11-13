@@ -12,4 +12,5 @@
     <string name="raymund_c_rama_gmail_com">Raymund.C.Rama@gmail.com</string>
     <string name="version_12_11_2023">Version 12.11.2023</string>
     <string name="log_in_create_account">Log In / Create Account</string>
+    <string name="default_web_client_id" translatable="false">webClientId.apps.googleusercontent.com</string>
 </resources>

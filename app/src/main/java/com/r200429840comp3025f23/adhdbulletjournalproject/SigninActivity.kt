@@ -11,8 +11,6 @@ import com.google.firebase.auth.FirebaseAuth
 
 class SigninActivity : AppCompatActivity() {
 
-
-
     // See: https://developer.android.com/training/basics/intents/result
     private val signInLauncher = registerForActivityResult(
         FirebaseAuthUIActivityResultContract(),
