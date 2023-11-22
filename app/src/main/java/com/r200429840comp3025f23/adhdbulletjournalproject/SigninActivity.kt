@@ -8,6 +8,7 @@ import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult
 import com.google.firebase.auth.FirebaseAuth
+import android.net.Uri
 
 class SigninActivity : AppCompatActivity() {
 
@@ -35,6 +36,7 @@ class SigninActivity : AppCompatActivity() {
             .setAvailableProviders(providers)
             .build()
         signInLauncher.launch(signInIntent)
+
     }
 
     private fun onSignInResult(result: FirebaseAuthUIAuthenticationResult) {

@@ -63,5 +63,16 @@ dependencies {
     // This is ato load the firebase authentication pre-build user interface
     implementation ("com.firebaseui:firebase-ui-auth:7.2.0")
 
+//all used for the camera
+    implementation("androidx.camera:camera-core:1.2.0")
+    implementation("androidx.camera:camera-camera2:1.2.0")
+    implementation("androidx.camera:camera-view:1.2.0")
+    implementation("androidx.camera:camera-lifecycle:1.2.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.concurrent:concurrent-futures-ktx:1.1.0")
+
+    //to view photos
+    //implementation("android.activity:activity:1.8.1")
+
 
 }
