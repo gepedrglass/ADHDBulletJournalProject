@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.r200429840comp3025f23.adhdbulletjournalproject",
+    "sha256_cert_fingerprints":
+    ["5A:DB:05:DA:9B:3B:CF:39:C4:C2:D9:9C:A5:88:3F:DE:41:6C:81:B2:02:08:A7:40:25:1A:8B:FC:68:82:04:E0"]
+  }
+}]
