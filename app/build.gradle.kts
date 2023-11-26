@@ -12,8 +12,8 @@ android {
         applicationId = "com.r200429840comp3025f23.adhdbulletjournalproject"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
