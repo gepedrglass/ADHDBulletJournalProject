@@ -38,25 +38,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="484dp"
-        android:text="https://github.com/gepedrglass/ADHDAppPrivacyPolicyRepo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/privacy_policy"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="203dp" />
 
     <Button
         android:id="@+id/SettingsLogInButton"
@@ -77,5 +64,13 @@
         android:text="@string/settings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SettingsLogInButton" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="349dp"
+        android:layout_height="120dp"
+        android:text="This Project is being used as a classroom assignment. Any of the Data collected with this app will not be used or sold. THis app my be removed along with associated data at any point.  If you wish to have your account and associated data removed from this app, send an email to 200429840@student.georgianc.on.ca along with the email address used to log into the site."
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="234dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
