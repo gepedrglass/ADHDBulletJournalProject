@@ -14,4 +14,6 @@
     <string name="log_in_create_account">Log In / Create Account</string>
     <string name="default_web_client_id" translatable="false">webClientId.apps.googleusercontent.com</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="this_project_is_being_used_as_a_classroom_assignment_any_of_the_data_collected_with_this_app_will_not_be_used_or_sold_this_app_my_be_removed_along_with_associated_data_at_any_point_if_you_wish_to_have_your_account_and_associated_data_removed_from_this_app_send_an_email_to_200429840_student_georgianc_on_ca_along_with_the_email_address_used_to_log_into_the_site">This Project is being used as a classroom assignment. Any of the Data collected with this app will not be used or sold. THis app my be removed along with associated data at any point. If you wish to have your account and associated data removed from this app, send an email to 200429840@student.georgianc.on.ca along with the email address used to log into the site.</string>
+    <string name="privacy_policy_button">Privacy Policy</string>
 </resources>

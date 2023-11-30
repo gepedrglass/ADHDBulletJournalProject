@@ -1,6 +1,7 @@
 package com.r200429840comp3025f23.adhdbulletjournalproject
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.r200429840comp3025f23.adhdbulletjournalproject.databinding.ActivityMainBinding
@@ -21,6 +22,14 @@ class Settings : AppCompatActivity() {
 
         binding.SettingsLogInButton.setOnClickListener {
             startActivity(Intent(this, SigninActivity::class.java))
+        }
+
+        binding.privacyPolicyButton.setOnClickListener {
+            //val i = "https://github.com/gepedrglass/ADHDAppPrivacyPolicyRepo";
+            //Intent i = new Intent(Intent.ACTION_VIEW);
+            //i.setData(Uri.parse(url))
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/gepedrglass/ADHDAppPrivacyPolicyRepo"))
+            startActivity(i)
         }
     }
 }
