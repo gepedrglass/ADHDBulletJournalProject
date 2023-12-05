@@ -1,6 +1,8 @@
 # ADHDBulletJournalProject - Raymund Rama 200429840 - Developer Email: 200429840@student.georgianc.on.ca
 This is the repository for my ADHD Bullet Journal Assignment for COMP 3025
 
+5 DEC 2023 8:56 AM THE APP IS LIVE ON THE GOOGLE PLAY STORE.
+
 
 This Project is being used as a classroom assignment. Any of the Data collected with this app will not be used or sold. THis app my be removed along with associated data at any point. 
 
